@@ -1,38 +1,43 @@
-.App {
+TodoWrapper.module.css
+.TodoWrapper {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #4E8CAB;
+  border-radius: 10px;
+  background-color: #C3E6EC;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.TodoWrapper h1 {
   text-align: center;
+  color: #204051;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* TodoForm.module.css */
+.TodoForm {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-input {
+  width: calc(100% - 18px);
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #4E8CAB;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todo-btn {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #007EA7;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
