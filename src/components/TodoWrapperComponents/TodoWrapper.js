@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { TodoForm } from './TodoForm';
-import { Todo } from './Todo';
-import { EditTodoForm } from './EditTodoForm'; 
+import { TodoForm } from '../TodoFromComponents/TodoForm';
+import { Todo } from '../TodoComponents/Todo';
+import { EditTodoForm } from '../EditTodoFormComponents/EditTodoForm'; 
 import { v4 as uuidv4 } from 'uuid';
-uuidv4();
+import styles from './TodoWrapper.module.css';
 
-export const TodoWrapper = () => {
+
+ const TodoWrapper = () => {
     const [todos, setTodos] = useState([]);
 
     const addTodo = todo => {
@@ -25,7 +26,7 @@ export const TodoWrapper = () => {
         setTodos(todos.map(todo=> todo.id === id ? {...todo, task, isEditing: !todo.isEditing} : todo))
     }
     return (
-        <div className='TodoWrapper'>
+        <div className={styles.TodoWrapper}>
             <h1>To Do List</h1>
             <TodoForm addTodo={addTodo} />
             {todos.map((todo, index) => (
@@ -38,3 +39,4 @@ export const TodoWrapper = () => {
         </div>
     );
 };
+export default TodoWrapper;

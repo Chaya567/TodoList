@@ -1,4 +1,4 @@
-/* TodoWrapper.module.css */
+TodoWrapper.module.css
 .TodoWrapper {
   width: 600px;
   margin: 50px auto;
@@ -41,59 +41,3 @@
   margin-top: 10px;
 }
 
-.todo-btn:hover {
-  background-color: #005E7D;
-}
-
-/* Todo.module.css */
-.Todo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #4E8CAB;
-  padding: 20px 0;
-}
-
-.completed {
-  text-decoration: line-through;
-  color: #204051;
-}
-
-.edit-btn, .delete-btn {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #007EA7;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.edit-btn:hover, .delete-btn:hover {
-  background-color: #FFFF00;
-}
-
-/* WeatherComponent.module.css */
-.WeatherComponent {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  padding: 10px;
-  background-color: #C3E6EC;
-  border: 1px solid #4E8CAB;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
-}
-
-.WeatherComponent p {
-  color: #204051;
-  font-size: 16px;
-  margin: 0;
-}
-
-.WeatherComponent span {
-  color: #204051;
-  font-weight: bold;
-}
